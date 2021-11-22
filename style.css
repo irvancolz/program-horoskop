@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #ccc;
+    padding: 50px;
+    border-radius: 20px;
+    background-color: aquamarine;
+}
+.container h1{
+    font-size: 34px;
+    font-weight: 800;
+}
+.horoskop-text{
+    text-align: center;
+    margin: 20px auto;
+    font-size: 20px;
+    font-weight: 600;
+}
+.horoskop-button{
+    position: relative;
+    padding: 20px;
+    width: 50%;
+    text-align: center;
+    margin: 20px auto;
+    font-size: 18px;
+    font-weight: 800;
+    background-color: rgb(255, 48, 48);
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 7px #000;
+    transition: .2s;
+    cursor: pointer;
+}
+.horoskop-button:active{
+    top: 7px;
+    box-shadow: none;
+}
+.reset{
+    background-color: rgb(41, 235, 41);
+}
+.result-container{
+    min-height: 150px;
+    overflow: hidden;
+    padding: 20px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+.horoskop-result{
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    transition: .5s;
+    display: none;
+}
+
+.mengerikan{
+    border-left: 8px solid rgb(211, 180, 6);
+}
+.footer{
+    font-size: 12px;
+    font-weight: 100;
+    position: absolute;
+    bottom: 10px;
+    color: rgb(68, 68, 68);
+    left: 50%;
+    transform: translate(-50%);
+}
+.level-container{
+    background-color: aquamarine;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translate(0 , -50%);
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 50vh;
+    width: 20vw;
+}
+.level{
+    position: relative;
+    width: 100%;
+    border-radius: 5px;
+    display: block;
+    background-color: crimson;
+    margin: 10px 0;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 5px 0 #000;
+    cursor: pointer;
+    transition: .2s;
+    color: #000;
+    font-weight: 600;
+}
+.selected{
+    top: 5px;
+    box-shadow: none;
+    background-color: rgb(202, 111, 129);
+    color: #fff;
+}
+.level:first-child{
+    background-color: rgb(41, 235, 41);
+}
+.level:nth-child(2){
+    background-color: rgb(211, 180, 6);
+}
+.level:last-child{
+    background-color: crimson;
+}
